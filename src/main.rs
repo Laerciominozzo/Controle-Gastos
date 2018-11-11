@@ -21,8 +21,7 @@ fn files(file: PathBuf) -> Option<NamedFile> {
 
 fn main() {
     rocket::ignite()
-        .mount("/", routes![controller::table::index, files])
-        .mount("/form", routes![controller::form::form])
+        .mount("/", routes![controller::table::index, files, controller::form::form])
         .attach(Template::fairing())
         .launch();
 }
