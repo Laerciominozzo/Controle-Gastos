@@ -8,7 +8,7 @@
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Nova movimentação</div>
         <div class="card-body">
-            <form>
+            <form action="cadastroCusto" method="post">
                 <div class="form-group">
                     <div class="form-row">
                         <div class="form-label-group">
@@ -28,15 +28,15 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="form-label-group">
-                            <input type="date" id="data" class="form-control" placeholder="00/00/0000"
-                                   required="required">
-                            <label for="data">Email address</label>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="form-group">-->
+                <!--<div class="form-row">-->
+                <!--<div class="form-label-group">-->
+                <!--<input type="date" id="data" class="form-control" placeholder="00/00/0000"-->
+                <!--required="required">-->
+                <!--<label for="data">Email address</label>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
                 <div class="form-group">
                     <div class="form-row">
                         <div class="form-label-group">
@@ -48,7 +48,8 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-6">
-                        <a class="btn btn-primary btn-block" href="login.html">Enviar</a>
+                        <input class="btn btn-primary btn-block" type="submit" value="Enviar">
+
                     </div>
                     <div class="col-md-6">
                         <a class="btn btn-secondary btn-block" href="login.html">Cancelar</a>
